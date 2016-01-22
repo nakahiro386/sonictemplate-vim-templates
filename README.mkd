@@ -1,0 +1,7 @@
+sonictemplate-vim-templates
+===================
+
+The templates repository for
+[sonictemplate-vim](https://github.com/mattn/sonictemplate-vim).
+
+

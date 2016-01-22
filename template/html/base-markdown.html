@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <!-- http://qiita.com/tatesuke/items/794a7f97ae217daba25b -->
+  <!-- https://cdnjs.com/libraries/highlight.js/8.9.1 -->
+  <!-- https://github.com/alampros/Docter -->
+  <!-- http://rawgit.com/ -->
+  <head>
+    <meta charset="utf-8">
+    <title>{{_name_}}</title>
+    <link rel="stylesheet" href="https://rawgit.com/alampros/Docter/master/ghf_marked.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/railscasts.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/dark.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/solarized_dark.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/solarized_light.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/monokai.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/monokai_sublime.min.css"> -->
+    <style type="text/css" media="all">
+      body { margin: 0; }
+    </style>
+  </head>
+
+<body>
+  <div></div>
+
+
+<script type="text/template" id="markedContent">
+<!--==================================================================
+ ↓ここからmarkdownを記述します
+====================================================================-->
+{{_cursor_}}
+<!--==================================================================
+ ↑ここまでmarkdownを記述します
+====================================================================-->
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/accesslog.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/dos.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/groovy.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/powershell.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/vim.min.js"></script>
+
+<script>
+var content = document.getElementById("markedContent");
+document.getElementsByTagName('body')[0].innerHTML = marked(content.innerHTML);
+hljs.initHighlightingOnLoad();
+</script>
+
+</body>
+</html>
